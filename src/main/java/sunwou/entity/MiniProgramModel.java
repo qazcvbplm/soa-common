@@ -32,12 +32,10 @@ public class MiniProgramModel extends MongoBaseEntity implements Serializable {
 	private Double modelPrice;// 模板价格
 	private String modelCover;// 模板封面;
 	private Map<Object, Object> modelImage;// 模板图片和说明;
-	private String releaseTime;// 发布时间
-	private Date releasetime;
-	private String[] industry;// 适用行业
+	private Tag[] industry;// 适用行业
 	private String status;// 上下架
-	private String[] modelStyle;// 模板风格;
-	private String[] businssType;// 模板风格;
+	private Tag[] modelStyle;// 模板风格;
+	private Tag[] businssType;// 模板风格;
 
 	public String getFuncDesc() {
 		return funcDesc;
@@ -63,28 +61,42 @@ public class MiniProgramModel extends MongoBaseEntity implements Serializable {
 		this.modelImage = modelImage;
 	}
 
-	public String[] getIndustry() {
+
+
+	public static String getTableName() {
+		return tableName;
+	}
+
+	public static void setTableName(String tableName) {
+		MiniProgramModel.tableName = tableName;
+	}
+
+	public Tag[] getIndustry() {
 		return industry;
 	}
 
-	public void setIndustry(String[] industry) {
+	public void setIndustry(Tag[] industry) {
 		this.industry = industry;
 	}
 
-	public String[] getModelStyle() {
+	public Tag[] getModelStyle() {
 		return modelStyle;
 	}
 
-	public void setModelStyle(String[] modelStyle) {
+	public void setModelStyle(Tag[] modelStyle) {
 		this.modelStyle = modelStyle;
 	}
 
-	public String[] getBusinssType() {
+	public Tag[] getBusinssType() {
 		return businssType;
 	}
 
-	public void setBusinssType(String[] businssType) {
+	public void setBusinssType(Tag[] businssType) {
 		this.businssType = businssType;
+	}
+
+	public static long getSerialversionuid() {
+		return serialVersionUID;
 	}
 
 	public String getModelid() {
@@ -125,22 +137,6 @@ public class MiniProgramModel extends MongoBaseEntity implements Serializable {
 
 	public void setModelPrice(Double modelPrice) {
 		this.modelPrice = modelPrice;
-	}
-
-	public String getReleaseTime() {
-		return releaseTime;
-	}
-
-	public void setReleaseTime(String releaseTime) {
-		this.releaseTime = releaseTime;
-	}
-
-	public Date getReleasetime() {
-		return releasetime;
-	}
-
-	public void setReleasetime(Date releasetime) {
-		this.releasetime = releasetime;
 	}
 
 	public String getStatus() {

@@ -2,6 +2,8 @@ package sunwou.entity;
 
 import java.io.Serializable;
 
+import javax.xml.crypto.Data;
+
 import org.springframework.data.annotation.Transient;
 
 import sunwou.mongo.util.MongoBaseEntity;
@@ -9,9 +11,7 @@ import sunwou.mongo.util.MongoEntityAnnotation;
 
 /**
  * 小程序
- * 
  * @author hanyangji
- *
  */
 @MongoEntityAnnotation("MiniProgram")
 public class MiniProgram extends MongoBaseEntity implements Serializable {
@@ -29,10 +29,45 @@ public class MiniProgram extends MongoBaseEntity implements Serializable {
 	private String merchantSecret;// 商户秘钥
 	private String appName;// 小程序名称
 	private String status;// 未付款/暂停服务/服务中/即将停止服务/请续费
-	private Object config;// 配置项
+	private String modelId;//小程序模板id
+	private String deadLine;//到期时间
+	private Data deadline;
 
-	// private Integer page;//页码
-	// private Integer size;//每页条数
+	public static String getTableName() {
+		return tableName;
+	}
+
+	public static void setTableName(String tableName) {
+		MiniProgram.tableName = tableName;
+	}
+
+	public String getModelId() {
+		return modelId;
+	}
+
+	public void setModelId(String modelId) {
+		this.modelId = modelId;
+	}
+
+	public String getDeadLine() {
+		return deadLine;
+	}
+
+	public void setDeadLine(String deadLine) {
+		this.deadLine = deadLine;
+	}
+
+	public Data getDeadline() {
+		return deadline;
+	}
+
+	public void setDeadline(Data deadline) {
+		this.deadline = deadline;
+	}
+
+	public static long getSerialversionuid() {
+		return serialVersionUID;
+	}
 
 	public String getUserid() {
 		return userid;
@@ -88,13 +123,5 @@ public class MiniProgram extends MongoBaseEntity implements Serializable {
 
 	public void setStatus(String status) {
 		this.status = status;
-	}
-
-	public Object getConfig() {
-		return config;
-	}
-
-	public void setConfig(Object config) {
-		this.config = config;
 	}
 }

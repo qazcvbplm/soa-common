@@ -10,6 +10,7 @@ import sunwou.mongo.util.MongoEntityAnnotation;
 /**
  * 存储空间
  * @author Landalf
+ * @deprecated
  */
 @MongoEntityAnnotation("storageSpace")
 public class StorageSpace extends MongoBaseEntity implements Serializable{

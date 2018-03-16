@@ -2,28 +2,34 @@ package sunwou.entity;
 
 import java.io.Serializable;
 
+import org.springframework.data.annotation.Transient;
+
 import sunwou.mongo.util.MongoBaseEntity;
 import sunwou.mongo.util.MongoEntityAnnotation;
-
+/**
+ * 文件上传实体类
+ * @author Administrator
+ */
 @MongoEntityAnnotation("fileEntity")
 public class FileEntity extends MongoBaseEntity implements Serializable{
 
 	private static final long serialVersionUID = -9014527797510484283L;
 
+	@Transient
 	public static String tableName="";
-	
+	//文件服务器地址
 	private String host;
-	
+	//文件路径
 	private String path;
-	
+	//文件大小
 	private Long size;
-	
+	//文件类型
 	private String type;
-	
+	//文件字类型
 	private String subtype;
-	
+	//用户id
 	private String userId;
-	
+	//程序id
 	private String appId;
 	
 	
@@ -102,6 +108,19 @@ public class FileEntity extends MongoBaseEntity implements Serializable{
 	public void setAppId(String appId) {
 		this.appId = appId;
 	}
-	
+	/**
+	 * 添加之前调用
+	 */
+	@Override
+	public void beforAdd() {
+		super.beforAdd();
+	}
+	/**
+	 * 更新之前调用
+	 */
+	@Override
+	public void beforUpdate() {
+		super.beforUpdate();
+	}
 	
 }

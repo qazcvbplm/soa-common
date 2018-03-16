@@ -1,11 +1,8 @@
 package sunwou.entity;
 
 import java.io.Serializable;
-import java.util.Date;
 
-import org.springframework.data.annotation.Id;
 import org.springframework.data.annotation.Transient;
-import org.springframework.data.mongodb.core.mapping.Document;
 
 import sunwou.mongo.util.MongoBaseEntity;
 import sunwou.mongo.util.MongoEntityAnnotation;

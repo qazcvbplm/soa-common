@@ -21,7 +21,7 @@ public class MiniProgram extends MongoBaseEntity implements Serializable {
 	private static final long serialVersionUID = -243653557604531560L;
 
 	@Transient
-	private static String tableName = "";
+	public static String tableName = "";
 	private String userid;// 用户编号
 	private String appid;
 	private String appSecret;

@@ -19,7 +19,7 @@ public class TransactionRecord extends MongoBaseEntity implements Serializable{
 	private static final long serialVersionUID = -7096658130026119298L;
 	
 	@Transient
-	private static String tableName = "";
+	public static String tableName = "";
 	
 	private String userId;
 	

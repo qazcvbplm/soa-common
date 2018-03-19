@@ -7,13 +7,7 @@ import sunwou.mongo.util.QueryObject;
 
 public interface ITagService {
 
-	/**
-	 * 添加一个小程序模板标签
-	 * @author hava
-	 * @param tag
-	 * @return 模板标签id
-	 * 2018年3月16日下午12:50:18
-	 */
+	
 	public String addTag(Tag tag);
 	
 	/**

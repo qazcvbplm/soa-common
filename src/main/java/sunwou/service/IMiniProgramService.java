@@ -4,6 +4,7 @@ import java.util.List;
 
 import sunwou.entity.MiniProgram;
 import sunwou.mongo.util.QueryObject;
+import sunwou.mongo.util.UpdateObject;
 
 public interface IMiniProgramService {
 
@@ -50,5 +51,22 @@ public interface IMiniProgramService {
 	 * 2018年3月20日上午8:57:15
 	 */
 	public MiniProgram findByAppid(String appid);
+	/**
+	 * 更新小程序信息
+	 * @author hava
+	 * @param qo
+	 * @param update
+	 * @return
+	 * 2018年3月20日下午12:40:40
+	 */
+	public int update(QueryObject qo,UpdateObject update);
 	
+	/**
+	 * 删除一条记录
+	 * @author hava
+	 * @param qo
+	 * @return
+	 * 2018年3月20日下午12:46:05
+	 */
+	public int remove(QueryObject qo);
 }

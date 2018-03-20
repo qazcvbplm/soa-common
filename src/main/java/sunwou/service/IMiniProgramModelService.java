@@ -43,4 +43,5 @@ public interface IMiniProgramModelService {
 	 */
 	public int update(MiniProgramModel miniProModel);
 	
+	
 }

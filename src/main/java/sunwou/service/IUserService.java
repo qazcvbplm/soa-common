@@ -38,5 +38,11 @@ public interface IUserService {
 	 * @return 更新数量
 	 */
 	public int update(User user);
-
+	/**
+	 * @userId 用户id
+	 * @size 文件大小
+	 * 判断用户是否能存贮
+	 * @return 
+	 */
+    public boolean checkUserSize(String userId,long size);
 }

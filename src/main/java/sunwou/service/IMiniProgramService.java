@@ -43,4 +43,6 @@ public interface IMiniProgramService {
 	 */
 	public int update(MiniProgram miniProgram);
 	
+	public MiniProgram findByAppid(String appid);
+	
 }

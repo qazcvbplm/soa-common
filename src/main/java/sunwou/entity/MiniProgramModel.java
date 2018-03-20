@@ -24,7 +24,7 @@ public class MiniProgramModel extends MongoBaseEntity implements Serializable {
 	@Transient
 	public static String tableName = "";
 
-	private String modelid;// 模板编号
+//	private String modelid;// 模板编号
 	private String userid;// 用户编号
 	private String modelName;// 模板名称
 	private String funcDesc;// 功能描述
@@ -35,7 +35,7 @@ public class MiniProgramModel extends MongoBaseEntity implements Serializable {
 	private Tag[] industry;// 适用行业
 	private String status;// 上下架
 	private Tag[] modelStyle;// 模板风格;
-	private Tag[] businssType;// 模板风格;
+	private Tag[] businssType;// 商户性质;
 
 	public String getFuncDesc() {
 		return funcDesc;
@@ -99,13 +99,6 @@ public class MiniProgramModel extends MongoBaseEntity implements Serializable {
 		return serialVersionUID;
 	}
 
-	public String getModelid() {
-		return modelid;
-	}
-
-	public void setModelid(String modelid) {
-		this.modelid = modelid;
-	}
 
 	public String getUserid() {
 		return userid;

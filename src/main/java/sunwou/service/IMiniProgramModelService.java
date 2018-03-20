@@ -44,14 +44,22 @@ public interface IMiniProgramModelService {
 	 */
 	public int update(MiniProgramModel miniProModel);
 	
-	public int update(QueryObject qo,UpdateObject update);
-	
 	/**
-	 * 删除一条记录
+	 * 更新小程序模板信息
+	 * @author hava
+	 * @param qo
+	 * @param update
+	 * @return
+	 * 2018年3月20日下午12:34:52
+	 */
+	public int update(QueryObject qo,UpdateObject update);
+
+	/**
+	 * 删除小程序模板信息
 	 * @author hava
 	 * @param qo
 	 * @return
-	 * 2018年3月20日下午12:50:23
+	 * 2018年3月20日下午4:19:47
 	 */
 	public int remove(QueryObject qo);
 }

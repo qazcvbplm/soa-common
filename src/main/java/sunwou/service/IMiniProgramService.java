@@ -42,7 +42,13 @@ public interface IMiniProgramService {
 	 * 2018年3月16日上午10:52:50
 	 */
 	public int update(MiniProgram miniProgram);
-	
+	/**
+	 * 根据appid查找小程序
+	 * @author hava
+	 * @param appid
+	 * @return 小程序实体类
+	 * 2018年3月20日上午8:57:15
+	 */
 	public MiniProgram findByAppid(String appid);
 	
 }

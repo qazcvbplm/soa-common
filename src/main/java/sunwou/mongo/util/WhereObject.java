@@ -1,6 +1,10 @@
 package sunwou.mongo.util;
 
-public  class WhereObject {
+import java.io.Serializable;
+
+public  class WhereObject implements Serializable{
+
+	private static final long serialVersionUID = -9207327010825146069L;
 
 	private String value;
 	

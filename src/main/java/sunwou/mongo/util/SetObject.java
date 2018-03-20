@@ -1,8 +1,11 @@
 package sunwou.mongo.util;
 
-public class SetObject {
+import java.io.Serializable;
 
-	
+public class SetObject implements Serializable{
+
+	private static final long serialVersionUID = 4909818891445474058L;
+
 	private String name;
 	
 	private String value;

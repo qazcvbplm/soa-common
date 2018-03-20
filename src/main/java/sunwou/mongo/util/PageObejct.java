@@ -1,6 +1,10 @@
 package sunwou.mongo.util;
 
-public class PageObejct {
+import java.io.Serializable;
+
+public class PageObejct implements Serializable{
+
+	private static final long serialVersionUID = -1092635544762413954L;
 
 	private int currentPage;
 	

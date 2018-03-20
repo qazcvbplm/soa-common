@@ -11,6 +11,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Scope;
 import org.springframework.data.domain.Sort;
 import org.springframework.data.domain.Sort.Direction;
+import org.springframework.data.domain.Sort.Order;
 import org.springframework.data.mongodb.core.MongoTemplate;
 import org.springframework.data.mongodb.core.query.Criteria;
 import org.springframework.data.mongodb.core.query.Query;
@@ -225,13 +226,17 @@ public class MongoBaseDaoImple<T extends MongoBaseEntity> implements MongoBaseDa
     	}
     	if(qo.getSorts()!=null){
     		SortObject[] sorts=qo.getSorts();
+    		List<Order> orders=new ArrayList<>();
     		for(SortObject temp:sorts){
     			if(temp.isAsc()){
-    				query.with(new Sort(Direction.ASC, temp.getValue()));
+    				orders.add(new Order(Direction.ASC, temp.getValue()));
     			}else
     			{
-    				query.with(new Sort(Direction.DESC, temp.getValue()));
+    				orders.add(new Order(Direction.DESC, temp.getValue()));
     			}
+    		}
+    		if(orders.size()>0){
+    			query.with(new Sort(orders));
     		}
     	}
     	if(qo.getPages()!=null){

@@ -44,14 +44,6 @@ public interface IMiniProgramModelService {
 	 */
 	public int update(MiniProgramModel miniProModel);
 	
-	/**
-	 * 
-	 * @author hava
-	 * @param qo
-	 * @param update
-	 * @return
-	 * 2018年3月20日下午12:34:52
-	 */
 	public int update(QueryObject qo,UpdateObject update);
 	
 	/**

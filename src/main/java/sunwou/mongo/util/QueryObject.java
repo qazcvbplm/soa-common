@@ -16,8 +16,17 @@ public class QueryObject implements Serializable{
 	private SortObject  sorts[];
 	private WhereObject wheres[];
 	private PageObejct pages;
+	private int count;
 	
+
 	
+	public int getCount() {
+		return count;
+	}
+
+	public void setCount(int count) {
+		this.count = count;
+	}
 
 	public PageObejct getPages() {
 		return pages;

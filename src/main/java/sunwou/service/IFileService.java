@@ -24,6 +24,13 @@ public interface IFileService {
 	 * @return  文件列表
 	 */
 	List<FileEntity> fileList(QueryObject qo);
+	
+	/**
+	 * 返回数量
+	 * @param qo
+	 * @return  文件列表
+	 */
+	int count(QueryObject qo);
 	/**
 	 * 统计某个用户文件所占空间大小
 	 * @param userId

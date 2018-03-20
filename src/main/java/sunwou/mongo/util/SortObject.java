@@ -1,6 +1,10 @@
 package sunwou.mongo.util;
 
-public class SortObject {
+import java.io.Serializable;
+
+public class SortObject implements Serializable{
+
+	private static final long serialVersionUID = -4663745615945128394L;
 
 	private String value;
 	

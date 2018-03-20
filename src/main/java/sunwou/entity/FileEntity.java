@@ -31,11 +31,25 @@ public class FileEntity extends MongoBaseEntity implements Serializable{
 	private String userId;
 	//程序id
 	private String appId;
+	//文件原名
+	private String originName;
+	
+	
 	
 	
 
-	public FileEntity(String host, String path, Long size, String type, String subtype, String userId, String appId) {
+	
+	public String getOriginName() {
+		return originName;
+	}
+
+	public void setOriginName(String originName) {
+		this.originName = originName;
+	}
+
+	public FileEntity(String originName,String host, String path, Long size, String type, String subtype, String userId, String appId) {
 		super();
+		this.originName=originName;
 		this.host = host;
 		this.path = path;
 		this.size = size;

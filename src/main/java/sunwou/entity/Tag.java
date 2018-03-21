@@ -17,19 +17,10 @@ public class Tag extends MongoBaseEntity implements Serializable {
 	@Transient
 	public static String tableName = "";
 
-	private String tagId;
-	private String tagType;
-	private String tagName;
-	private String num;
+	private String tagType;//标签类型
+	private String tagName;//标签名字
+	private String num;//序号
 
-
-	public String getTagId() {
-		return tagId;
-	}
-
-	public void setTagId(String tagId) {
-		this.tagId = tagId;
-	}
 
 	public String getTagType() {
 		return tagType;

@@ -69,4 +69,12 @@ public interface IMiniProgramService {
 	 * 2018年3月20日下午12:46:05
 	 */
 	public int remove(QueryObject qo);
+	/**
+	 * 获取查询数量
+	 * @author hava
+	 * @param qo
+	 * @return
+	 * 2018年3月21日下午2:26:14
+	 */
+	int count(QueryObject qo);
 }

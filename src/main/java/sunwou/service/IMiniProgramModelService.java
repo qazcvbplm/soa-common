@@ -54,6 +54,7 @@ public interface IMiniProgramModelService {
 	 */
 	public int update(QueryObject qo,UpdateObject update);
 
+	
 	/**
 	 * 删除小程序模板信息
 	 * @author hava

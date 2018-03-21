@@ -33,12 +33,44 @@ public class FileEntity extends MongoBaseEntity implements Serializable{
 	private String appId;
 	//文件原名
 	private String originName;
-	
-	
-	
+	//文件分类
+	private String category;
+	//缩略图
+	private String thumbnail;
+	//缩略图
+	private Long thumbnailSize;
 	
 
+
 	
+	public Long getThumbnailSize() {
+		return thumbnailSize;
+	}
+
+	public void setThumbnailSize(Long thumbnailSize) {
+		this.thumbnailSize = thumbnailSize;
+	}
+
+	public String getThumbnail() {
+		return thumbnail;
+	}
+
+	public void setThumbnail(String thumbnail) {
+		this.thumbnail = thumbnail;
+	}
+
+	public static long getSerialversionuid() {
+		return serialVersionUID;
+	}
+
+	public String getCategory() {
+		return category;
+	}
+
+	public void setCategory(String category) {
+		this.category = category;
+	}
+
 	public String getOriginName() {
 		return originName;
 	}

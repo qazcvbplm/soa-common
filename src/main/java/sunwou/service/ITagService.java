@@ -4,10 +4,17 @@ import java.util.List;
 
 import sunwou.entity.Tag;
 import sunwou.mongo.util.QueryObject;
+import sunwou.mongo.util.UpdateObject;
 
 public interface ITagService {
 
-	
+	/**
+	 *添加标签
+	 * @author hava
+	 * @param tag
+	 * @return
+	 * 2018年3月20日下午4:40:46
+	 */
 	public String addTag(Tag tag);
 	
 	/**
@@ -35,5 +42,5 @@ public interface ITagService {
 	 * @return 更新数量
 	 * 2018年3月16日下午12:54:05
 	 */
-	public int update(Tag tag);
+	public int update(QueryObject qo,UpdateObject uo);
 }

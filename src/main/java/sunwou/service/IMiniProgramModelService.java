@@ -53,7 +53,6 @@ public interface IMiniProgramModelService {
 	 * 2018年3月20日下午12:34:52
 	 */
 	public int update(QueryObject qo,UpdateObject update);
-	
 
 	/**
 	 * 删除小程序模板信息

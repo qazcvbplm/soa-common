@@ -21,6 +21,8 @@ public class TimeUtil {
     private static SimpleDateFormat sdfCommon = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
 
     private static SimpleDateFormat sdfWithoutInterval = new SimpleDateFormat("yyyyMMddHHmmss");
+    
+    private static SimpleDateFormat sdfWithoutInterval2 = new SimpleDateFormat("yyyyMMddHHmmssSSS");
 
     
     private static ThreadLocal<DateFormat> threadLocal = new ThreadLocal<DateFormat>(); 
@@ -32,7 +34,7 @@ public class TimeUtil {
     //精确到秒无符�?
     public static final String TO_S2 = "yyyyMMddHHmmss";
     //精确到毫秒无符号
-
+    public static final String TO_S3 = "yyyyMMddHHmmssSSS";
     
     
     /**
@@ -64,6 +66,9 @@ public class TimeUtil {
 				break;
 			case TO_S2:
 				result=sdfWithoutInterval.format(date);
+				break;
+			case TO_S3:
+				result=sdfWithoutInterval2.format(date);
 				break;
 			}
             return result;

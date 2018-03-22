@@ -2,6 +2,7 @@ G:\j2ee\common\src\main\java\sunwou\mongo\util\PageObejct.java
 G:\j2ee\common\src\main\java\sunwou\mongo\util\WhereObject.java
 G:\j2ee\common\src\main\java\sunwou\entity\WxUser.java
 G:\j2ee\common\src\main\java\sunwou\mongo\util\MongoBaseEntity.java
+G:\j2ee\common\src\main\java\sunwou\service\IFileCategoryService.java
 G:\j2ee\common\src\main\java\sunwou\entity\FileEntity.java
 G:\j2ee\common\src\main\java\sunwou\entity\Tag.java
 G:\j2ee\common\src\main\java\sunwou\mongo\util\MongoBaseDao.java
@@ -23,6 +24,7 @@ G:\j2ee\common\src\main\java\sunwou\service\ITagService.java
 G:\j2ee\common\src\main\java\sunwou\mongo\util\SetObject.java
 G:\j2ee\common\src\main\java\sunwou\mongo\util\MongoEntityAnnotation.java
 G:\j2ee\common\src\main\java\sunwou\mongo\util\TimeUtil.java
+G:\j2ee\common\src\main\java\sunwou\entity\FileCategory.java
 G:\j2ee\common\src\main\java\sunwou\mongo\util\UpdateObject.java
 G:\j2ee\common\src\main\java\sunwou\entity\StorageSpace.java
 G:\j2ee\common\src\main\java\sunwou\service\IWxUserService.java

@@ -17,7 +17,7 @@ public interface IFileService {
 	 * @param ids  文件的id数组
 	 * @return   实际删除数量
 	 */
-	int remove(String[] ids);
+	int remove(String[] ids,String root);
 	/**
 	 * 查询文件列表
 	 * @param qo
@@ -37,5 +37,10 @@ public interface IFileService {
 	 * @return 文件总大小b
 	 */
 	Long userSize(String userId);
-	
+	/**
+	 * 获取某个用户的文件分类
+	 * @param userId 用户id
+	 * @return
+	 */
+	List<FileEntity> findCategory(String userId);
 }

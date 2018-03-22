@@ -32,6 +32,15 @@ public class MiniProgram extends MongoBaseEntity implements Serializable {
 	private String modelid;//小程序模板id
 	private String deadLine;//到期时间
 	private Data deadline;
+	private String modelType;
+
+	public String getModelType() {
+		return modelType;
+	}
+
+	public void setModelType(String modelType) {
+		this.modelType = modelType;
+	}
 
 	public static String getTableName() {
 		return tableName;

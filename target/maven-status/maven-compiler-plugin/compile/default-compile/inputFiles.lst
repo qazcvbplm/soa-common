@@ -1,35 +1,3 @@
-<<<<<<< HEAD
-G:\j2ee\common\src\main\java\sunwou\mongo\util\PageObejct.java
-G:\j2ee\common\src\main\java\sunwou\mongo\util\WhereObject.java
-G:\j2ee\common\src\main\java\sunwou\entity\WxUser.java
-G:\j2ee\common\src\main\java\sunwou\mongo\util\MongoBaseEntity.java
-G:\j2ee\common\src\main\java\sunwou\service\IFileCategoryService.java
-G:\j2ee\common\src\main\java\sunwou\entity\FileEntity.java
-G:\j2ee\common\src\main\java\sunwou\entity\Tag.java
-G:\j2ee\common\src\main\java\sunwou\mongo\util\MongoBaseDao.java
-G:\j2ee\common\src\main\java\sunwou\entity\MiniProgramModel.java
-G:\j2ee\common\src\main\java\sunwou\mongo\util\MongoUtil.java
-G:\j2ee\common\src\main\java\sunwou\service\IMiniProgramService.java
-G:\j2ee\common\src\main\java\sunwou\entity\MiniProgram.java
-G:\j2ee\common\src\main\java\sunwou\service\IFileService.java
-G:\j2ee\common\src\main\java\sunwou\mongo\util\MongoBaseDaoImple.java
-G:\j2ee\common\src\main\java\sunwou\entity\TransactionRecord.java
-G:\j2ee\common\src\main\java\sunwou\service\IUserService.java
-G:\j2ee\common\src\main\java\sunwou\mongo\util\SortObject.java
-G:\j2ee\common\src\main\java\sunwou\service\IMiniProgramModelService.java
-G:\j2ee\common\src\main\java\sunwou\entity\User.java
-G:\j2ee\common\src\main\java\sunwou\mongo\util\QueryObject.java
-G:\j2ee\common\src\main\java\sunwou\service\ITransactionRecordService.java
-G:\j2ee\common\src\main\java\sunwou\service\IStorageSpaceService.java
-G:\j2ee\common\src\main\java\sunwou\service\ITagService.java
-G:\j2ee\common\src\main\java\sunwou\mongo\util\SetObject.java
-G:\j2ee\common\src\main\java\sunwou\mongo\util\MongoEntityAnnotation.java
-G:\j2ee\common\src\main\java\sunwou\mongo\util\TimeUtil.java
-G:\j2ee\common\src\main\java\sunwou\entity\FileCategory.java
-G:\j2ee\common\src\main\java\sunwou\mongo\util\UpdateObject.java
-G:\j2ee\common\src\main\java\sunwou\entity\StorageSpace.java
-G:\j2ee\common\src\main\java\sunwou\service\IWxUserService.java
-=======
 /Users/hanyangji/eclipse-workspace/common/src/main/java/sunwou/mongo/util/UpdateObject.java
 /Users/hanyangji/eclipse-workspace/common/src/main/java/sunwou/mongo/util/WhereObject.java
 /Users/hanyangji/eclipse-workspace/common/src/main/java/sunwou/mongo/util/MongoUtil.java
@@ -38,6 +6,7 @@ G:\j2ee\common\src\main\java\sunwou\service\IWxUserService.java
 /Users/hanyangji/eclipse-workspace/common/src/main/java/sunwou/service/IFileService.java
 /Users/hanyangji/eclipse-workspace/common/src/main/java/sunwou/service/IWxUserService.java
 /Users/hanyangji/eclipse-workspace/common/src/main/java/sunwou/service/IMiniProgramService.java
+/Users/hanyangji/eclipse-workspace/common/src/main/java/sunwou/service/IFileCategoryService.java
 /Users/hanyangji/eclipse-workspace/common/src/main/java/sunwou/entity/MiniProgramModel.java
 /Users/hanyangji/eclipse-workspace/common/src/main/java/sunwou/entity/FileEntity.java
 /Users/hanyangji/eclipse-workspace/common/src/main/java/sunwou/mongo/util/MongoBaseDao.java
@@ -49,6 +18,7 @@ G:\j2ee\common\src\main\java\sunwou\service\IWxUserService.java
 /Users/hanyangji/eclipse-workspace/common/src/main/java/sunwou/service/IUserService.java
 /Users/hanyangji/eclipse-workspace/common/src/main/java/sunwou/mongo/util/SortObject.java
 /Users/hanyangji/eclipse-workspace/common/src/main/java/sunwou/entity/TransactionRecord.java
+/Users/hanyangji/eclipse-workspace/common/src/main/java/sunwou/entity/FileCategory.java
 /Users/hanyangji/eclipse-workspace/common/src/main/java/sunwou/service/IMiniProgramModelService.java
 /Users/hanyangji/eclipse-workspace/common/src/main/java/sunwou/mongo/util/MongoBaseEntity.java
 /Users/hanyangji/eclipse-workspace/common/src/main/java/sunwou/service/ITagService.java
@@ -58,4 +28,3 @@ G:\j2ee\common\src\main\java\sunwou\service\IWxUserService.java
 /Users/hanyangji/eclipse-workspace/common/src/main/java/sunwou/service/IStorageSpaceService.java
 /Users/hanyangji/eclipse-workspace/common/src/main/java/sunwou/mongo/util/SetObject.java
 /Users/hanyangji/eclipse-workspace/common/src/main/java/sunwou/mongo/util/QueryObject.java
->>>>>>> 29f53dbe6dc0db69a4e00562a349d18f01ce5e62

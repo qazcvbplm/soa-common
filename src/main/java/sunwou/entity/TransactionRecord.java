@@ -14,21 +14,43 @@ import sunwou.mongo.util.MongoEntityAnnotation;
  *
  */
 @MongoEntityAnnotation("transactionRecord")
-public class TransactionRecord extends MongoBaseEntity implements Serializable{
+public class TransactionRecord extends MongoBaseEntity implements Serializable {
 
 	private static final long serialVersionUID = -7096658130026119298L;
-	
+
 	@Transient
 	public static String tableName = "";
-	
+
 	private String userId;
-	
-	//产品类型：模板/服务器/SSD
+
+	// 产品类型：模板/服务器/SSD
 	private String proType;
-	
-	//模板ID
-	private String modalId;
-	
+	// 购买的使用时间
+	private String runTime;
+
+	// 流水编号
+	private String name;
+
+	// 交易金额
+	private Double price;
+
+	// 交易类型：普通支付/续费
+	private String payType;
+
+	// 交易方式:支付宝/微信
+	private String payStyle;
+
+	// 模板ID
+	private String modelId;
+
+	public String getRunTime() {
+		return runTime;
+	}
+
+	public void setRunTime(String runTime) {
+		this.runTime = runTime;
+	}
+
 	public String getUserId() {
 		return userId;
 	}
@@ -45,12 +67,14 @@ public class TransactionRecord extends MongoBaseEntity implements Serializable{
 		this.proType = proType;
 	}
 
-	public String getModalId() {
-		return modalId;
+
+
+	public String getModelId() {
+		return modelId;
 	}
 
-	public void setModalId(String modalId) {
-		this.modalId = modalId;
+	public void setModelId(String modelId) {
+		this.modelId = modelId;
 	}
 
 	public String getName() {
@@ -85,17 +109,4 @@ public class TransactionRecord extends MongoBaseEntity implements Serializable{
 		this.payStyle = payStyle;
 	}
 
-	//交易名称
-	private String name;
-	
-	//交易金额
-	private Double price;
-	
-	//交易类型：普通支付/续费
-	private String payType;
-	
-	//交易方式:支付宝/微信
-	private String payStyle;
-	
-	
 }

@@ -45,4 +45,12 @@ public interface IUserService {
 	 * @return 
 	 */
     public boolean checkUserSize(String userId,long size);
+    /**
+     * 获取查询数量
+     * @author hava
+     * @param qo
+     * @return
+     * 2018年3月21日下午2:26:31
+     */
+    int count(QueryObject qo);
 }

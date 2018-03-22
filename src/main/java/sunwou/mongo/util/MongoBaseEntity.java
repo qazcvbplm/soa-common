@@ -8,8 +8,6 @@ import java.util.List;
 
 import org.springframework.context.annotation.Configuration;
 import org.springframework.data.annotation.Id;
-import org.springframework.data.annotation.Transient;
-import org.springframework.data.mongodb.core.mapping.Document;
 
 
 
@@ -19,7 +17,6 @@ import org.springframework.data.mongodb.core.mapping.Document;
  * @author onepieces
  */
 @Configuration  //让Spring来加载该类配置
-@Document
 public class MongoBaseEntity {
 	static{
 		MongoBaseDaoImple.classes.put("mongoBaseEntity", MongoBaseEntity.class);
@@ -34,16 +31,12 @@ public class MongoBaseEntity {
 					field.set(temp, anno.value());
 					System.out.println(temp.getName());
 				} catch (NoSuchFieldException e) {
-					// TODO Auto-generated catch block
 					e.printStackTrace();
 				} catch (SecurityException e) {
-					// TODO Auto-generated catch block
 					e.printStackTrace();
 				} catch (IllegalArgumentException e) {
-					// TODO Auto-generated catch block
 					e.printStackTrace();
 				} catch (IllegalAccessException e) {
-					// TODO Auto-generated catch block
 					e.printStackTrace();
 				}
 				
@@ -61,7 +54,6 @@ public class MongoBaseEntity {
 	
 	private Boolean isDelete;
 	
-
 	public Boolean getIsDelete() {
 		return isDelete;
 	}
@@ -98,6 +90,8 @@ public class MongoBaseEntity {
 
 	
 	public void  beforAdd(){
+		String timeTamp=TimeUtil.formatDate(new Date(), TimeUtil.TO_S3);
+		this.sunwouId="sunwou"+timeTamp;
 		String time=TimeUtil.formatDate(new Date(), TimeUtil.TO_S);
 		this.setCreateTime(time);
 		this.setCreateDate(time.substring(0, 10));

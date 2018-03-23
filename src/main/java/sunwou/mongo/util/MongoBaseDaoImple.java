@@ -331,7 +331,7 @@ public class MongoBaseDaoImple<T extends MongoBaseEntity> implements MongoBaseDa
      * @throws IllegalArgumentException 
      */
     @Deprecated
-    private  Update mongoutilU(Object ob, String classname)  {
+    public  Update mongoutilU(Object ob, String classname)  {
         Update update = new Update();
         Object value=null;
         Class cl=classes.get(classname);
@@ -372,6 +372,13 @@ public class MongoBaseDaoImple<T extends MongoBaseEntity> implements MongoBaseDa
     	else
     		return true;
     }
+
+	@Override
+	public int updateMu(String[] ids, T update,String className) {
+		Update up=mongoutilU(update,className);
+		int rs=mongoTemplate.updateMulti(new Query(Criteria.where("_id").in(ids)), up, className).getN();
+		return rs;
+	}
 
 	
 }

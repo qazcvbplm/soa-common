@@ -168,5 +168,11 @@ public class FileEntity extends MongoBaseEntity implements Serializable{
 	public void beforUpdate() {
 		super.beforUpdate();
 	}
+
+	public FileEntity() {
+		super();
+	}
+	
+	 
 	
 }

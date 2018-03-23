@@ -19,6 +19,12 @@ public interface IFileService {
 	 */
 	int remove(String[] ids,String root);
 	/**
+	 * 批量更新文件
+	 * @param ids  文件的id数组
+	 * @return   实际更新数量
+	 */
+	int update(String[] ids,FileEntity uppdate);
+	/**
 	 * 查询文件列表
 	 * @param qo
 	 * @return  文件列表

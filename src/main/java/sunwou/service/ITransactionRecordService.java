@@ -7,28 +7,30 @@ import sunwou.entity.TransactionRecord;
 import sunwou.mongo.util.QueryObject;
 
 public interface ITransactionRecordService {
+
 	/**
-	 *  添加
-	 * @param file
-	 * @return  id
+	 * 添加交易记录
+	 * @author hava
+	 * @param transactionRecord
+	 * @return
+	 * 2018年3月22日下午3:38:20
 	 */
 	String add(TransactionRecord transactionRecord);
 	/**
-	 * 批量删除
-	 * @param ids  文件的id数组
-	 * @return   
+	 * 删除交易记录
+	 * @author hava
+	 * @param ids
+	 * @return
+	 * 2018年3月22日下午3:38:27
 	 */
-	int remove(String[] ids);
+	int remove(String ids);
 	/**
-	 * 查询列表
+	 * 查询
+	 * @author hava
 	 * @param qo
-	 * @return  文件列表
+	 * @return 交易记录列表
+	 * 2018年3月22日下午3:38:30
 	 */
-	List<TransactionRecord> findAll(QueryObject qo);
-	/**
-	 * 查询一个用户的交易记录，返回一个数值
-	 * @param qo
-	 * @return  文件列表
-	 */
-	List<TransactionRecord> findSpace(String id,QueryObject qo);
+	List<TransactionRecord> find(QueryObject qo);
+
 }

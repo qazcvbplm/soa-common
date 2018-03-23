@@ -29,7 +29,7 @@ public class MiniProgram extends MongoBaseEntity implements Serializable {
 	private String merchantSecret;// 商户秘钥
 	private String appName;// 小程序名称
 	private String status;// 未付款/暂停服务/服务中/即将停止服务/请续费
-	private String modelId;//小程序模板id
+	private String modelid;//小程序模板id
 	private String deadLine;//到期时间
 	private Data deadline;
 
@@ -41,12 +41,13 @@ public class MiniProgram extends MongoBaseEntity implements Serializable {
 		MiniProgram.tableName = tableName;
 	}
 
-	public String getModelId() {
-		return modelId;
+
+	public String getModelid() {
+		return modelid;
 	}
 
-	public void setModelId(String modelId) {
-		this.modelId = modelId;
+	public void setModelid(String modelid) {
+		this.modelid = modelid;
 	}
 
 	public String getDeadLine() {

@@ -32,7 +32,7 @@ public class TransactionRecord extends MongoBaseEntity implements Serializable {
 	private String name;
 
 	// 交易金额
-	private Double price;
+	private String price;
 
 	// 交易类型：普通支付/续费
 	private String payType;
@@ -42,6 +42,18 @@ public class TransactionRecord extends MongoBaseEntity implements Serializable {
 
 	// 模板ID
 	private String modelId;
+	//小程序id
+	private String miniId;
+
+
+
+	public String getMiniId() {
+		return miniId;
+	}
+
+	public void setMiniId(String miniId) {
+		this.miniId = miniId;
+	}
 
 	public String getRunTime() {
 		return runTime;
@@ -85,11 +97,12 @@ public class TransactionRecord extends MongoBaseEntity implements Serializable {
 		this.name = name;
 	}
 
-	public Double getPrice() {
+
+	public String getPrice() {
 		return price;
 	}
 
-	public void setPrice(Double price) {
+	public void setPrice(String price) {
 		this.price = price;
 	}
 

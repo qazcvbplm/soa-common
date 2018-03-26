@@ -36,7 +36,17 @@ public class MiniProgramModel extends MongoBaseEntity implements Serializable {
 	private String modelStyle;// 模板风格;
 	private String businssType;// 商户性质;
 	private String modelType;
+	private String articleid;
+	
 
+
+	public String getArticleid() {
+		return articleid;
+	}
+
+	public void setArticleid(String articleid) {
+		this.articleid = articleid;
+	}
 
 	public String getModelType() {
 		return modelType;

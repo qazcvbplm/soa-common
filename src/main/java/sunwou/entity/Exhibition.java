@@ -3,6 +3,8 @@ package sunwou.entity;
 import java.io.Serializable;
 import java.util.Date;
 
+import org.springframework.data.annotation.Transient;
+
 import sunwou.mongo.util.MongoBaseEntity;
 import sunwou.mongo.util.MongoEntityAnnotation;
 import sunwou.mongo.util.TimeUtil;
@@ -16,6 +18,8 @@ public class Exhibition extends MongoBaseEntity implements Serializable{
 
 	private static final long serialVersionUID = -567884492356460680L;
 
+	@Transient
+	public static String tableName="";
 	
 	private String title;//标题
 	

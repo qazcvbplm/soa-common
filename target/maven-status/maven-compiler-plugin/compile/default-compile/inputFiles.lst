@@ -1,5 +1,6 @@
 /Users/hanyangji/eclipse-workspace/common/src/main/java/sunwou/mongo/util/UpdateObject.java
 /Users/hanyangji/eclipse-workspace/common/src/main/java/sunwou/mongo/util/WhereObject.java
+/Users/hanyangji/eclipse-workspace/common/src/main/java/sunwou/service/IExhibitionService.java
 /Users/hanyangji/eclipse-workspace/common/src/main/java/sunwou/mongo/util/MongoUtil.java
 /Users/hanyangji/eclipse-workspace/common/src/main/java/sunwou/entity/MiniProgram.java
 /Users/hanyangji/eclipse-workspace/common/src/main/java/sunwou/service/ITransactionRecordService.java
@@ -7,11 +8,15 @@
 /Users/hanyangji/eclipse-workspace/common/src/main/java/sunwou/service/IWxUserService.java
 /Users/hanyangji/eclipse-workspace/common/src/main/java/sunwou/service/IMiniProgramService.java
 /Users/hanyangji/eclipse-workspace/common/src/main/java/sunwou/service/IFileCategoryService.java
+/Users/hanyangji/eclipse-workspace/common/src/main/java/sunwou/entity/Exhibition.java
 /Users/hanyangji/eclipse-workspace/common/src/main/java/sunwou/entity/MiniProgramModel.java
 /Users/hanyangji/eclipse-workspace/common/src/main/java/sunwou/entity/FileEntity.java
 /Users/hanyangji/eclipse-workspace/common/src/main/java/sunwou/mongo/util/MongoBaseDao.java
 /Users/hanyangji/eclipse-workspace/common/src/main/java/sunwou/entity/WxUser.java
 /Users/hanyangji/eclipse-workspace/common/src/main/java/sunwou/mongo/util/TimeUtil.java
+/Users/hanyangji/eclipse-workspace/common/src/main/java/sunwou/service/IArticleService.java
+/Users/hanyangji/eclipse-workspace/common/src/main/java/sunwou/service/IWXPayToBankService.java
+/Users/hanyangji/eclipse-workspace/common/src/main/java/sunwou/entity/Article.java
 /Users/hanyangji/eclipse-workspace/common/src/main/java/sunwou/mongo/util/MongoEntityAnnotation.java
 /Users/hanyangji/eclipse-workspace/common/src/main/java/sunwou/entity/Tag.java
 /Users/hanyangji/eclipse-workspace/common/src/main/java/sunwou/entity/StorageSpace.java

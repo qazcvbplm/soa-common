@@ -29,4 +29,13 @@ public interface IExhibitionService {
 	 */
 	public int update(Exhibition ex);
 	
+	/**
+	 * 添加
+	 * @author hava
+	 * @param ex
+	 * @return
+	 * 2018年3月26日上午10:38:40
+	 */
+	public String add(Exhibition ex);
+	
 }

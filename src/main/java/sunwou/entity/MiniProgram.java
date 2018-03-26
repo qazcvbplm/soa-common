@@ -13,7 +13,7 @@ import sunwou.mongo.util.MongoEntityAnnotation;
  * 小程序
  * @author hanyangji
  */
-@MongoEntityAnnotation("MiniProgram")
+@MongoEntityAnnotation("miniProgram")
 public class MiniProgram extends MongoBaseEntity implements Serializable {
 
 	/**
@@ -31,6 +31,15 @@ public class MiniProgram extends MongoBaseEntity implements Serializable {
 	private String status;// 未付款/暂停服务/服务中/即将停止服务/请续费
 	private String modelid;//小程序模板id
 	private String deadLine;//到期时间
+	private MiniProgramModel miniMod;
+	public MiniProgramModel getMiniMod() {
+		return miniMod;
+	}
+
+	public void setMiniMod(MiniProgramModel miniMod) {
+		this.miniMod = miniMod;
+	}
+
 	private Data deadline;
 
 	public static String getTableName() {
@@ -125,4 +134,5 @@ public class MiniProgram extends MongoBaseEntity implements Serializable {
 	public void setStatus(String status) {
 		this.status = status;
 	}
+
 }

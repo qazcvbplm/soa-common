@@ -39,11 +39,11 @@ public class Exhibition extends MongoBaseEntity implements Serializable{
 	
 	private String images[];//图片数组
 	
-	private String remark1;//预留字段
+	private String remark1;//房型
 	
-	private String remark2;//预留字段
+	private String remark2;//首页推荐
 	
-	private String remark3;//预留字段
+	private String remark3;//页内推荐
 	
 	private String richText;//富文本
 	

@@ -3,6 +3,7 @@
 /Users/hanyangji/eclipse-workspace/common/src/main/java/sunwou/service/IExhibitionService.java
 /Users/hanyangji/eclipse-workspace/common/src/main/java/sunwou/mongo/util/MongoUtil.java
 /Users/hanyangji/eclipse-workspace/common/src/main/java/sunwou/entity/MiniProgram.java
+/Users/hanyangji/eclipse-workspace/common/src/main/java/sunwou/service/ICollectionService.java
 /Users/hanyangji/eclipse-workspace/common/src/main/java/sunwou/service/ITransactionRecordService.java
 /Users/hanyangji/eclipse-workspace/common/src/main/java/sunwou/service/IFileService.java
 /Users/hanyangji/eclipse-workspace/common/src/main/java/sunwou/service/IWxUserService.java
@@ -25,6 +26,7 @@
 /Users/hanyangji/eclipse-workspace/common/src/main/java/sunwou/entity/TransactionRecord.java
 /Users/hanyangji/eclipse-workspace/common/src/main/java/sunwou/entity/FileCategory.java
 /Users/hanyangji/eclipse-workspace/common/src/main/java/sunwou/service/IMiniProgramModelService.java
+/Users/hanyangji/eclipse-workspace/common/src/main/java/sunwou/entity/Collection.java
 /Users/hanyangji/eclipse-workspace/common/src/main/java/sunwou/mongo/util/MongoBaseEntity.java
 /Users/hanyangji/eclipse-workspace/common/src/main/java/sunwou/service/ITagService.java
 /Users/hanyangji/eclipse-workspace/common/src/main/java/sunwou/entity/User.java

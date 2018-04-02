@@ -18,6 +18,14 @@ public class Exhibition extends MongoBaseEntity implements Serializable{
 
 	private static final long serialVersionUID = -567884492356460680L;
 
+	public static String getTableName() {
+		return tableName;
+	}
+
+	public static void setTableName(String tableName) {
+		Exhibition.tableName = tableName;
+	}
+
 	@Transient
 	public static String tableName="";
 	

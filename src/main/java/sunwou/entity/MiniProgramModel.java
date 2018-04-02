@@ -1,3 +1,4 @@
+ 
 package sunwou.entity;
 
 import java.io.Serializable;
@@ -36,7 +37,16 @@ public class MiniProgramModel extends MongoBaseEntity implements Serializable {
 	private String modelStyle;// 模板风格;
 	private String businssType;// 商户性质;
 	private String modelType;
-	private String articleid;
+	private String articleid;//文章id
+	public String getRelation() {
+		return relation;
+	}
+
+	public void setRelation(String relation) {
+		this.relation = relation;
+	}
+
+	private String relation;//关联后台
 	
 
 
